@@ -1,0 +1,17 @@
+<div class="mini-card" [ngStyle]="{ 'height': isAdmin ? '315px' : '' }" >
+    <div style= "display: flex;">
+      <a href="https://www.colegiooncedeseptiembre.com/nivel-secundario"><img class="company-photo" src="/assets/img/idua.webp"></a>
+    <h2 class="title" style="margin-left: 70px;">{{carta?.title}}</h2>
+    </div>
+    
+    <p>{{carta?.texto}}</p>
+    <li>{{carta?.texto10}}</li>
+    <li>{{carta?.texto2}}</li>
+    <li>{{carta?.texto3}}</li>
+    <a>View Certificade</a>
+    <hr *ngIf="isAdmin" class="line">
+    <div style="display: flex;justify-content: space-around;"><td *ngIf="isAdmin"><button class="button buttongreen" routerLink="/editar/{{carta?.id}}"> Editar</button></td>
+      <td *ngIf="isAdmin"><button class="button buttonred" (click)="borrar(carta?.id)">Eliminar</button></td>
+      </div>
+    
+  </div>

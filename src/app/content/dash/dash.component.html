@@ -1,0 +1,21 @@
+<div class="mini-card" [ngStyle]="{ 'height': isAdmin ? '415px' : '375px' }" >
+    <div style="display:flex; ">
+    <a href="https://www.tiendadash.com.ar/?gclid=CjwKCAjw5dqgBhBNEiwA7PryaMgpa0757BNf1ga9LQ9_DayvBzKjRNadkCFyzDnQSadndWVR89T_FhoCe4EQAvD_BwE"><img class="company-photo" src="/assets/img/dash.jpg"></a>
+    <h2 class="title" style="margin-left: 30px;">{{carta?.title}}</h2>
+    </div>
+    <p style="margin-left: 20px;">{{carta?.texto}}</p>
+    <p style="margin-left: 20px;">{{carta?.texto10}}</p>
+    <div style="margin-left: 20px;">
+      <li>{{carta?.texto2}}</li>
+      <li>{{carta?.texto3}}</li>
+      <li>{{carta?.texto4}}</li>
+      <p>{{carta?.texto5}}</p>
+      <li>{{carta?.texto6}}</li>
+      <li>{{carta?.texto7}}</li>
+      <hr *ngIf="isAdmin" class="line">
+      <div style="display: flex;justify-content: space-around;"><td *ngIf="isAdmin"><button class="button buttongreen" routerLink="/editar/{{carta?.id}}"> Editar</button></td>
+        <td *ngIf="isAdmin"><button class="button buttonred" (click)="borrar(carta?.id)">Eliminar</button></td>
+        </div>
+    </div>
+
+  </div>

@@ -1,0 +1,12 @@
+<div class="mini-card" [ngStyle]="{ 'height': isAdmin ? '620px' : '' }">
+    <div class="title">{{carta?.title}}</div>
+    <p>{{carta?.texto}}</p>
+    <img class="project-photo" src="/assets/img/firstattemp.png">
+    <p>{{carta?.texto10}}</p>
+    <p>The GitHub:</p>
+    <a href="https://github.com/DamianDubra/Portfolio-Damian-Dubra"><button class="button buttonback">Files</button></a>
+    <hr *ngIf="isAdmin" class="line">
+    <div style="display: flex;justify-content: space-around;"><td *ngIf="isAdmin"><button class="button buttongreen" routerLink="/editar/{{carta?.id}}"> Editar</button></td>
+      <td *ngIf="isAdmin"><button class="button buttonred" (click)="borrar(carta?.id)">Eliminar</button></td>
+      </div>
+  </div>

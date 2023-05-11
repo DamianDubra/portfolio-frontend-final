@@ -1,0 +1,71 @@
+<div class="container" *ngIf="cartasService" style="width: 100%;  position: fixed; ">
+    <div class="mini-card">
+        <div>
+            
+            <form (ngSubmit)="onUpdate()">
+                <div class="form-group">
+                    <label for="title" class="input-label">Title</label><br>
+                    <input type="text" class="form-control" id="title" name="title"
+                    [(ngModel)]="cartasService.title">
+                </div>
+                <div class="form-group">
+                    <label for="texto" class="input-label">Text</label><br>
+                    <input type="text" class="form-control" id="texto" name="texto"
+                    [(ngModel)]="cartasService.texto">
+                </div>
+                <div class="form-group">
+                    <label for="texto10" class="input-label">Text 2</label><br>
+                    <input type="text" class="form-control" id="texto10" name="texto10"
+                    [(ngModel)]="cartasService.texto10">
+                </div>
+                <div class="form-group">
+                    <label for="texto2" class="input-label">Text 3</label><br>
+                    <input type="text" class="form-control" id="texto2" name="texto2"
+                    [(ngModel)]="cartasService.texto2">
+                </div>
+                <div class="form-group">
+                    <label for="texto3" class="input-label">Text 4</label><br>
+                    <input type="text" class="form-control" id="texto3" name="texto3"
+                    [(ngModel)]="cartasService.texto3">
+                </div>
+                <div class="form-group">
+                    <label for="texto4" class="input-label">Text 5</label><br>
+                    <input type="text" class="form-control" id="texto4" name="texto4"
+                    [(ngModel)]="cartasService.texto4">
+                </div>
+                <div class="form-group">
+                    <label for="texto5" class="input-label">Text 6</label><br>
+                    <input type="text" class="form-control" id="texto5" name="texto5"
+                    [(ngModel)]="cartasService.texto5">
+                </div>
+                <div class="form-group">
+                    <label for="texto6" class="input-label">Text 7</label><br>
+                    <input type="text" class="form-control" id="texto6" name="texto6"
+                    [(ngModel)]="cartasService.texto6">
+                </div>
+                <div class="form-group">
+                    <label for="texto7" class="input-label">Text 8</label><br>
+                    <input type="text" class="form-control" id="texto7" name="texto7"
+                    [(ngModel)]="cartasService.texto7">
+                </div>
+                <div class="form-group">
+                    <label for="texto8" class="input-label">Text 9</label><br>
+                    <input type="text" class="form-control" id="texto8" name="texto8"
+                    [(ngModel)]="cartasService.texto8">
+                </div>
+                <div class="form-group">
+                    <label for="texto9" class="input-label">Text 10</label><br>
+                    <input type="text" class="form-control" id="texto9" name="texto9"
+                    [(ngModel)]="cartasService.texto9">
+                </div>
+                <br>
+                <div style="justify-content: space-around; display: flex;">
+                <button class="button buttongreen" >Update</button>
+                <button  class="button buttonback" routerLink="/">
+                     Back</button>
+                     </div>
+            </form>
+    
+        </div>
+    </div>
+</div>

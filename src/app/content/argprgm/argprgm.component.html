@@ -1,0 +1,23 @@
+<div class="mini-card" [ngStyle]="{ 'height': isAdmin ? '315px' : '' }" >
+    <div style= "display: flex;">
+      <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"><img class="company-photo" style="height: 40px; margin-top: 20px; margin-right: 10px;" src="/assets/img/argprglogo.jpg"></a>
+    <h2 class="title">{{carta?.title}}</h2>
+    </div>
+    
+    <p>{{carta?.texto}}
+    </p>
+    <li>{{carta?.texto10}}</li>
+    <li>{{carta?.texto2}}</li>
+    <li>{{carta?.texto3}}</li>
+    <a href="https://drive.google.com/file/d/13RcK5gLH_hWrBKrQ9CyrObiSo1C5E-VU/view?usp=sharing">View Certificade</a>
+    <li>{{carta?.texto4}}</li>
+    <a>View Certificade</a><br>
+    <hr *ngIf="isAdmin" class="line">
+    <div style="display: flex;justify-content: space-around;"><td *ngIf="isAdmin"><button class="button buttongreen" routerLink="/editar/{{carta?.id}}"> Editar</button></td>
+      <td *ngIf="isAdmin"><button class="button buttonred" (click)="borrar(carta?.id)">Eliminar</button></td>
+      </div>
+
+  
+  </div>
+
+

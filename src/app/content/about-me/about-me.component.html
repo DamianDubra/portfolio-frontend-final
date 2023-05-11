@@ -1,0 +1,23 @@
+
+<div class="title">{{carta?.title}}</div>
+  <div class="container">
+  <div>
+    <div class="card" style="display: flex;">
+  <div style="align-self: center; display: flex;"><a href="https://docs.google.com/document/d/1zOE_6g-FYhm6g_ejJVxlHHeJmjzQuNbP/edit?usp=sharing&ouid=104305576391939570252&rtpof=true&sd=true"><img class="profile-photo" src="/assets/img/profilepicture.png" ></a></div>
+  <div class="content" style="align-self: center;">
+    
+    <h2>{{carta?.texto}}</h2>
+   {{carta?.texto10}}<br>
+   {{carta?.texto2}}<br>
+   {{carta?.texto3}}
+    <br>
+    {{carta?.texto4}}<br>
+    {{carta?.texto5}}
+    <hr *ngIf="isAdmin" class="line">
+    <div style="display: flex;justify-content: space-around;"><td *ngIf="isAdmin"><button class="button buttongreen" routerLink="/editar/{{carta?.id}}"> Editar</button></td>
+        <td *ngIf="isAdmin"><button class="button buttonred" (click)="borrar(carta?.id)">Eliminar</button></td>
+        </div>
+  </div></div>
+  
+  </div>
+  </div>

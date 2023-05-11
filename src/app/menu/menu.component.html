@@ -1,0 +1,24 @@
+
+    <div class="container">
+      <div class= "head">
+      <div class="logo" style="padding: 6px;"><img style="margin-right: 5px;" src="/assets/img/argprglogo.jpg" class="company-photo">Portfolio Web</div>
+      
+      <div class="login">
+        <a class="nav-link" href="#">Home</a>
+        <a href="#about" class="nav-link">About me</a>
+        <a href="#proyects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        
+        <a class="nav-link" *ngIf="!isLogged" routerLink="/login">Login</a>
+        <a class="nav-link" *ngIf="isLogged" (click)="onLogOut()" style="cursor: pointer;"><i class="fas fa-door-open"></i>Logg out</a>
+        
+        
+      </div>
+      
+      </div>
+      
+    </div>
+    
+     
+
+  

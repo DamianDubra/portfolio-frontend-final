@@ -1,0 +1,47 @@
+a:hover{
+    transform: translateY(-5px);
+ }
+
+ a{
+    transition: transform 0.3s;
+ }
+.nav-link:hover{
+    color:rgb(196, 196, 196);
+    
+}
+html{
+    scroll-behavior:smooth;
+}
+.gitbutton:hover {
+    transform: translateY(-5px);
+}
+
+.contacts {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}   
+
+.project-photo{
+    justify-content: center;
+    border-radius: 15px;
+    
+    width:395px ;
+}
+.company-photo {
+    height: 70px;
+    align-items: center; 
+
+    border-radius: 10px;
+}
+.title {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container {
+    justify-content: center;
+    display: flex;
+}

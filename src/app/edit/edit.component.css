@@ -1,0 +1,118 @@
+
+.nav-link {
+    padding: 20px;
+
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
+*{
+    font-family: 'IBM Plex Mono', monospace ;
+}
+
+.form-group{
+    padding-top: 10px;
+}
+input{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 380px;
+}
+.card {
+    
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    
+    justify-content: center;
+    width: 900px;
+    margin: 40px;
+}
+.button {
+    
+    background-color: #686868; /* Green */
+    border-radius: 10PX;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+  }
+  .buttonback {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #666666;
+  }
+  
+  .buttonback:hover {
+    background-color: #6e6e6e;
+    color: white;
+  }
+  .buttongreen {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4a9b3a;
+  }
+  
+  .buttongreen:hover {
+    background-color: #4a9b3a;
+    color: white;
+  }
+
+  .buttonred {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #943232;
+  }
+  
+  .buttonred:hover {
+    background-color: #943232;
+    color: white;
+  }
+
+
+.mini-card{
+  display: flex;
+  justify-content: center;
+    margin-top: 6%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+   padding: 20px;
+    width: 400px;
+    margin-right: 10px;
+    z-index: 3;
+}
+
+
+.container {
+    justify-content: flex-end;
+    display: flex;
+}
+
+
+/*animations*/
+
+ a:hover{
+    transform: translateY(-5px);
+ }
+
+ a{
+    transition: transform 0.3s;
+ }
+.nav-link:hover{
+    color:rgb(196, 196, 196);
+    
+}
+html{
+    scroll-behavior:smooth;
+}
+.gitbutton:hover {
+    transform: translateY(-5px);
+}
