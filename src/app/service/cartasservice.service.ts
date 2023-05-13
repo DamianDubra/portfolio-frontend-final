@@ -7,7 +7,7 @@ import { CartasService } from '../class/cartas.service';
 })
 export class CartasserviceService {
 
-  cartasURL = 'http://localhost:8080/cartas/';
+  cartasURL = 'https://portfoliobackenddamian1.onrender.com/cartas/';
 
   constructor(private httpClient: HttpClient) { }
 

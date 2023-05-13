@@ -11,7 +11,7 @@ import { TokenService } from './token.service';
 })
 export class AuthService {
 
-  authURL = 'http://localhost:8080/auth/';
+  authURL = 'https://portfoliobackenddamian1.onrender.com/auth/';
   tokenService: any;
 
   constructor(private httpClient: HttpClient) { }

@@ -21,7 +21,7 @@ export class ProjectPotatoeComponent implements OnInit {
     private tokenService: TokenService) { }
 
   ngOnInit() {
-    this.http.get('http://localhost:8080/cartas/9').subscribe((data) => {
+    this.http.get('https://portfoliobackenddamian1.onrender.com/cartas/9').subscribe((data) => {
       this.carta = data;
       console.log(this.carta);
       this.roles = this.tokenService.getAuthorities();
